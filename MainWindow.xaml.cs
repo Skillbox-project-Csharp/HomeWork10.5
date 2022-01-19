@@ -20,9 +20,14 @@ namespace HomeWork10._5
     /// </summary>
     public partial class MainWindow : Window
     {
+        private telegramApp.UIConnectorTelegramCloud Client { get; set; }
         public MainWindow()
         {
+
             InitializeComponent();
+            Client = new telegramApp.UIConnectorTelegramCloud(this, AppContext.BaseDirectory + @"\token.txt");
+            
+            UsersChatInfo.ItemsSource = Client.BotMessageLog;
         }
     }
 }

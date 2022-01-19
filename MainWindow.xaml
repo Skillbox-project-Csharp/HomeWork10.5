@@ -7,6 +7,26 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="243*"/>
+            <ColumnDefinition Width="550*"/>
+        </Grid.ColumnDefinitions>
+        <ListBox
+            x:Name="UsersChatInfo"
+            HorizontalAlignment="Left" 
+            Height="388" 
+            Margin="10,10,0,0" 
+            VerticalAlignment="Top" 
+            Width="223">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Margin="10">
+                        <TextBlock Text ="{Binding Text}" FontSize="25"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
     </Grid>
+
 </Window>
