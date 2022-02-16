@@ -15,7 +15,7 @@ namespace HomeWork10._5.telegramApp
             { new BotCommand(){Command = "getlistdocument", Description = "Показать список документов"}, "documents" },
             { new BotCommand(){Command = "getlistphoto", Description = "Показать список фото"}, "photo" },
             {new BotCommand(){Command = "getlistvideo", Description = "Показать список видео"}, "video" },
-            {new BotCommand(){Command = "getlistvoice", Description = "Показать список голосовых сообщений"}, "" }
+            {new BotCommand(){Command = "getlistvoice", Description = "Показать список голосовых сообщений"}, "voice" }
         };
 
 
